@@ -23,7 +23,8 @@ For the web interface:
 python -m streamlit run app.py
 \`\`\`
 
-Documentation and web pages that helped me set up the Local SDK Agent:
+
+## Documentation and web pages that helped me set up the Local SDK Agent:
 - https://learn.microsoft.com/en-us/windows/apps/develop/data-access/sqlite-data-access
 - https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering
 - https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-rag-app?tabs=windows
