@@ -31,4 +31,3 @@ python -m streamlit run app.py
 - https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local
 - https://techcommunity.microsoft.com/blog/azuredevcommunityblog/building-your-first-local-rag-application-with-foundry-local/4501968
 - https://azurefeeds.com/2026/03/30/building-your-first-local-rag-application-with-foundry-local/
-
