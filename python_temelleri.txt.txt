@@ -1,0 +1,9 @@
+Python, yüksek seviyeli ve yorumlanan bir programlama dilidir. Okunabilirliği yüksek olduğu için öğrenmesi kolaydır.
+
+Değişkenler Python’da tip belirtmeden tanımlanır. Örneğin: x = 5, name = "Alper".
+
+Python’da veri tipleri arasında int, float, string, list, tuple ve dictionary bulunur.
+
+Koşullu ifadeler if, elif ve else ile yazılır. Bu yapı programın akışını kontrol etmek için kullanılır.
+
+Döngüler for ve while ile oluşturulur. for genelde iterable yapılar üzerinde kullanılır.

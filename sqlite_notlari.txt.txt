@@ -1,0 +1,9 @@
+SQLite, hafif ve dosya tabanlı bir veritabanı sistemidir. Sunucu gerektirmez.
+
+Bir veritabanı oluşturmak için sadece bir .db dosyası oluşturmak yeterlidir.
+
+Temel SQL komutları SELECT, INSERT, UPDATE ve DELETE’tir.
+
+Tablo oluşturmak için CREATE TABLE komutu kullanılır. Kolon tipleri genelde TEXT, INTEGER gibi olur.
+
+SQLite genelde küçük projelerde ve mobil uygulamalarda tercih edilir.

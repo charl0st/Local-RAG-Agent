@@ -1,0 +1,9 @@
+Veri yapıları, veriyi organize etmek ve verimli kullanmak için kullanılır.
+
+List (array), en temel veri yapılarından biridir ve sıralı veri tutar.
+
+Stack (yığın), LIFO (Last In First Out) mantığıyla çalışır.
+
+Queue (kuyruk), FIFO (First In First Out) mantığına sahiptir.
+
+Tree ve Graph gibi yapılar daha karmaşık veri ilişkilerini temsil etmek için kullanılır.

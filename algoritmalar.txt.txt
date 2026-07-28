@@ -1,0 +1,9 @@
+Algoritma, belirli bir problemi çözmek için izlenen adımlar dizisidir.
+
+Zaman karmaşıklığı (Big-O notation), algoritmanın performansını analiz etmek için kullanılır.
+
+En yaygın karmaşıklıklar O(1), O(n), O(log n) ve O(n^2)'dir.
+
+Sıralama algoritmalarına örnek olarak Bubble Sort, Merge Sort ve Quick Sort verilebilir.
+
+Arama algoritmalarında Linear Search ve Binary Search sık kullanılır.
