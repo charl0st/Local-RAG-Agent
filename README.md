@@ -24,10 +24,16 @@ python -m streamlit run app.py
 \`\`\`
 
 ## Resources I used during the RAG assistant setup phase (Microsoft Summer AI Innovation Bootcamp):
--https://techcommunity.microsoft.com/blog/azuredevcommunityblog/building-your-first-local-rag-application-with-foundry-local/4501968
--https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local 
--https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-rag-app?tabs=windows 
--https://sqlite.org/index.html 
--https://azurefeeds.com/2026/03/30/building-your-first-local-rag-application-with-foundry-local/ 
--https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering 
--https://learn.microsoft.com/en-us/windows/apps/develop/data-access/sqlite-data-access
+XX https://techcommunity.microsoft.com/blog/azuredevcommunityblog/building-your-first-local-rag-application-with-foundry-local/4501968
+
+XX https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local 
+
+XX https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-rag-app?tabs=windows 
+
+XX https://sqlite.org/index.html 
+
+XX https://azurefeeds.com/2026/03/30/building-your-first-local-rag-application-with-foundry-local/ 
+
+XX https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering 
+
+XX https://learn.microsoft.com/en-us/windows/apps/develop/data-access/sqlite-data-access
