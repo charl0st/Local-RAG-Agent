@@ -8,9 +8,9 @@ from main import (
     answer_query,
 )
 
-st.set_page_config(page_title="RAG Asistanı", page_icon="🤖")
+st.set_page_config(page_title="Local RAG Agent", page_icon="🤖")
 st.title("Local RAG Agent")
-st.write("Bu asistan, sadece kendi ders notu dokümanlarına dayanarak sorularını cevaplar. Tamamen offline çalışır.")
+st.write("This assistant answers questions based only on its own document knowledge base. It operates entirely offline.")
 
 
 @st.cache_resource
@@ -47,16 +47,15 @@ def setup():
 
     return embed_client, chat_client, len(chunks)
 
-with st.spinner("Modeller yükleniyor, ilk seferde biraz sürebilir..."):
+with st.spinner("Loading models, this may take a while on first run..."):
     embed_client, chat_client, chunk_count = setup()
 
-st.success(f"Sistem hazır, {chunk_count} tane chunk yüklendi.")
+st.success(f"System ready, {chunk_count} chunks loaded.")
 
-
-question = st.text_input("Sorunuzu yazın:")
+question = st.text_input("Enter your question:")
 
 if question:
-    with st.spinner("Cevap hazırlanıyor..."):
+    with st.spinner("Generating answer..."):
         answer = answer_query(question, embed_client, chat_client)
-    st.markdown("### Cevap:")
+    st.markdown("### Answer:")
     st.write(answer)

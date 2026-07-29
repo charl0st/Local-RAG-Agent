@@ -1,0 +1,9 @@
+Data structures are used to organize and efficiently manipulate data.
+
+The list (array) is one of the most basic data structures and holds ordered data.
+
+Stack works with LIFO (Last In First Out) logic.
+
+Queue has FIFO (First In First Out) logic.
+
+Structures like Tree and Graph are used to represent more complex data relationships.

@@ -1,9 +1,0 @@
-Hata yönetimi (exception handling), programın çalışması sırasında oluşabilecek hataları güvenli bir şekilde ele almak için kullanılır.
-
-Python'da try-except bloğu, hata oluşabilecek kodu try içine, hata durumunda çalışacak kodu except içine yazmak için kullanılır.
-
-Yaygın hata tipleri arasında ValueError, TypeError, ZeroDivisionError ve FileNotFoundError bulunur.
-
-finally bloğu, hata olsun ya da olmasın her zaman çalışır. Genellikle dosya kapatma gibi temizlik işlemleri için kullanılır.
-
-raise ifadesi, programcının kendi hatasını (exception) manuel olarak fırlatmasını sağlar.

@@ -1,0 +1,9 @@
+An algorithm is a sequence of steps followed to solve a specific problem.
+
+Time complexity (Big-O notation) is used to analyze the performance of an algorithm.
+
+The most common complexities are O(1), O(n), O(log n), and O(n^2).
+
+Examples of sorting algorithms include Bubble Sort, Merge Sort, and Quick Sort.
+
+Search algorithms such as Linear Search and Binary Search are frequently used.

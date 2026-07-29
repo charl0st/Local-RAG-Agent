@@ -1,0 +1,9 @@
+Error management (exception handling) is used to safely handle errors that may occur during the operation of the program.
+
+In Python, the try-except block is used to write the code that may cause an error inside the try block, and the code that will run in case of an error inside the except block.
+
+Common error types include ValueError, TypeError, ZeroDivisionError, and FileNotFoundError.Dec.
+
+the finally block always works, whether there are errors or not. It is generally used for cleaning operations such as file closing.
+
+the raise statement allows the programmer to manually throw his own error (exception).

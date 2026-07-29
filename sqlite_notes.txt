@@ -1,0 +1,9 @@
+SQLite is a lightweight and file-based database system. No server required.
+
+Just one to create a database.Creating a database file is sufficient.
+
+The basic SQL commands are SELECT, INSERT, UPDATE, and DELETE.
+
+The CREATE TABLE command is used to create a table. Column types are usually TEXT, INTEGER, etc.
+
+SQLite is generally preferred in small projects and mobile applications.

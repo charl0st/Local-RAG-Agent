@@ -1,0 +1,9 @@
+Functions are blocks of code that can be called repeatedly, performing a specific task. In Python, it is defined by the def keyword.
+
+A function can take parameters and return a value with the return statement.  There can also be functions that do not take parameters and do not return a value.
+
+The default parameters define the value to be used if no value is given when calling the function. For example: def hello(name="World").
+
+*args and **kwargs allow a function to take an indefinite number of arguments. *args is for positional arguments, **kwargs is for keyword arguments.
+
+Lambda functions are single-line, anonymous functions. They are usually used for short operations.

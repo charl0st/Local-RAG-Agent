@@ -1,0 +1,9 @@
+Python is a high-level, interpreted programming language. It is easy to learn because it has high readability.
+
+Variables are defined in Python without specifying a type. For example: x = 5, name = "Alper".
+
+In Python, data types include int, float, string, list, tuple, and dictionary.
+
+Conditional expressions are written with if, elif, and else. This structure is used to control the flow of the program.
+
+Loops are created with for and while. for is typically used on iterable structures.

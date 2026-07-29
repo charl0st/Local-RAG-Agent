@@ -1,9 +1,0 @@
-Fonksiyonlar, belirli bir görevi yerine getiren, tekrar tekrar çağrılabilen kod bloklarıdır. Python'da def anahtar kelimesi ile tanımlanır.
-
-Bir fonksiyon parametre alabilir ve return ifadesi ile bir değer döndürebilir. Parametre almayan ve değer döndürmeyen fonksiyonlar da olabilir.
-
-Varsayılan parametreler (default parameters), fonksiyon çağrılırken değer verilmezse kullanılacak değeri tanımlar. Örneğin: def selam(isim="Dünya").
-
-*args ve **kwargs, bir fonksiyonun belirsiz sayıda argüman almasını sağlar. *args pozisyonel argümanlar, **kwargs anahtar kelime argümanları içindir.
-
-Lambda fonksiyonlar, tek satırlık, isimsiz (anonymous) fonksiyonlardır. Genellikle kısa işlemler için kullanılırlar.

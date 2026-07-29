@@ -14,7 +14,7 @@ def load_and_chunk_documents():
     all_chunks = []
     for filepath in glob.glob("*.txt"):
         filename = os.path.basename(filepath)
-        if filename == "requirements.txt":  # bilgi dokümanı değil, hariç tut
+        if filename == "requirements.txt":  
             continue
         with open(filepath, "r", encoding="utf-8") as f:
             text = f.read()
@@ -61,22 +61,26 @@ def answer_query(question, embed_client, chat_client, k=3):
     top_chunks = get_top_chunks(question, embed_client, k=k)
 
     context_text = "\n\n".join(
-        f"[Kaynak: {source}]\n{content}" for score, source, content in top_chunks
+        f"[Source: {source}]\n{content}" for score, source, content in top_chunks
     )
 
     system_prompt = (
-        "Sen bir soru-cevap asistanısın. Sadece sana verilen aşağıdaki bilgilere göre cevap ver. "
-        "Eğer cevap bu bilgilerde yoksa, 'Bu konuda elimde yeterli bilgi yok' de, tahmin yürütme veya uydurma. "
-        "Cevabında hangi kaynaktan yararlandığını belirt.\n\n"
-        f"BİLGİLER:\n{context_text}"
-    )
+    "You are a question-answering assistant. Answer ONLY using the information below. "
+    "Do not use any external or general knowledge.\n\n"
+    "Decide first: does the information below FULLY answer the question?\n"
+    "- If YES: give a clear, confident answer using only that information.\n"
+    "- If NO: respond with exactly 'I don't have enough information on this topic.' "
+    "and nothing else.\n"
+    "Never mix both behaviors in the same answer.\n\n"
+    f"INFORMATION:\n{context_text}"
+)
 
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": question}
     ]
 
-    response = chat_client.complete_chat(messages)
+    response = chat_client.complete_chat(messages,max_tokens=150)
     return response.choices[0].message.content
 
 def main():
@@ -95,7 +99,7 @@ def main():
     chat_client = chat_model.get_chat_client()
 
     chunks = load_and_chunk_documents()
-    print(f"Toplam {len(chunks)} chunk bulundu.\n")
+    print(f"Total {len(chunks)} chunks found.\n")
 
     texts = [c["content"] for c in chunks]
     batch_response = embed_client.generate_embeddings(texts)
@@ -111,18 +115,18 @@ def main():
         )
     conn.commit()
     conn.close()
-    print("Tüm chunk'lar embedding'e çevrildi ve SQLite'a kaydedildi. ✅\n")
+    print("All chunks were converted to embedding and saved to SQLite.\n")
 
-    print("--- RAG Asistanına Hoş Geldin! ---")
-    print("Çıkmak için 'exit' yaz.\n")
+    print("--- Welcome to the RAG Assistant ---")
+    print("Type 'exit' to quit.\n")
 
     while True:
-        question = input("Sorunuz: ")
+        question = input("Your question: ")
         if question.strip().lower() == "exit":
-            print("Görüşürüz!")
+            print("Goodbye!")
             break
         answer = answer_query(question, embed_client, chat_client)
-        print(f"Cevap: {answer}\n")
+        print(f"Answer: {answer}\n")
 
 if __name__ == "__main__":
     main()
